@@ -1,0 +1,17 @@
+@import 'grid-settings';
+@include gridle_generate_classes();
+@import '../../bower_components/bourbon/app/assets/stylesheets/bourbon';
+
+@import 'partials/vars';
+@import 'partials/class';
+@import 'partials/animation';
+@import 'partials/responsive';
+
+@import 'partials/wrap';
+	@import 'partials/slider';
+	@import 'partials/blocks';
+@import 'partials/header';
+@import 'partials/footer';
+@import 'partials/sidebar';
+@import 'partials/single';
+@import 'partials/category';

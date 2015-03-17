@@ -1,0 +1,49 @@
+.sliders{
+	@include gridle(12);
+	@include gridle_parent(phoness phoness-min);
+	#slider1{
+		@include gridle(12);
+		max-height: 463px;
+		.slides{
+			list:{style:none;}
+			@extend .no-margins;
+			@extend .no-paddings;
+			li{
+				a{
+					color:#ccc;
+					display: block;
+					width:100%;
+					height: 100%;
+					.post{
+						@include gridle(12);
+						@include gridle_parent();
+						background: #000;
+						height: 443px;
+						margin:{top:20px;}
+						.img_slide{
+							width: 100%;
+							height: 250px;
+							@include gridle_state(phoness phoness-min tabless){
+								background: {position: center; size:cover;}
+							}
+						}
+						h2{
+							font:{size:32px;weight:400;}
+							@extend .no-margins;
+							margin:{bottom:14px;}
+							padding: 20px 10px 0;
+							&:hover{@include animation(hovers .5s ease-in forwards);}
+							@include gridle_state(phoness phoness-min){
+								font:{size:20px;}
+							}
+						}
+						.post_excerpt{
+							padding: 0 10px;
+							font:{size:14px;family:Arial, Sans-Serif;}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,56 @@
+.footer{
+	@include gridle(12);
+	@include gridle_parent(phoness phoness-min tabless desktopess notebook-min);
+	background: #000;
+	margin: {top:30px;}
+	.footer-content{
+		@include gridle(12);
+		@include gridle_parent();
+		border:{top:1px solid #666;bottom:1px solid #666;}
+		padding:{top:40px;bottom:40px;}
+		overflow: hidden;
+		position: relative;
+		@include gridle_state(tabless-min){
+			padding:{left:10px;right:10px;}
+		}
+		.logo{
+			@include gridle(4, desktopess notebook-min);
+			@include gridle(12, phoness phoness-min);
+		}
+		.tools{
+			@include gridle(8, desktopess notebook-min);
+			@include gridle(12, phoness phoness-min);
+			color:#fff;
+			@extend .text-right;
+			.redes{
+				padding-top: 10px;
+				ul{
+					@extend .listas;
+					@extend .text-right;
+					@include gridle_state(phoness phoness-min){
+						text-align:center !important;
+					}
+				}
+			}
+			.up-site{
+				font:{size:13px;}
+				&:hover{@include animation(hovers .5s ease-in forwards);}
+				position: absolute;
+				right:10px;
+				top:5px;
+				cursor: pointer;
+			}
+		}
+	}
+	p{
+		@include gridle(12);
+		color: #666;
+  		font:{size: 11px;family:Arial,Sans-Serif;}
+  		@extend .text-center;
+  		padding:{top:10px;bottom:10px;}
+  		a{
+  			color:#666;
+  			text:{decoration:underline;}
+  		}
+	}
+}

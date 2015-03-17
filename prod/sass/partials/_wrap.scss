@@ -1,0 +1,112 @@
+body{
+	background:{color:$sec_color;}
+	color:#ccc;
+	font:{family:$pri_font;}
+	a{
+		color:$pri_color;
+		text:{decoration:none;}
+		&:hover{
+			color: #fff;
+		}
+	}
+	.wrapper{
+		@extend .wrap;
+		.all-content{
+			@include gridle(8);
+			@include gridle(12,phoness phoness-min tabless);
+			@include gridle_parent(phoness phoness-min tabless);
+			@include gridle_state(tabless-min){
+				padding:{left:10px;right:10px;}
+			}
+			@include gridle_state(phoness-min phoness){
+				padding:{left:0;right:0;}
+			}
+		}
+		.all-content-search{
+			@include gridle(12);
+			@include gridle-state(tabless-min){
+				padding:0 10px;
+			}
+			.resultados-busqueda{
+				.content-entry{
+					@include gridle(12);
+					@include gridle_parent(phoness phoness-min);
+					position: relative;
+					overflow: hidden;
+					margin:{top:10px;}
+					.tit-secction{
+						@include gridle(12);
+						color: #ccc;
+						font:{size: 24px;weight:400;}
+						margin:{bottom: 30px;}
+					}
+					.busquedas{
+						@extend .listas;
+						@extend .no-margins;
+						.busqueda{
+							border:{bottom:1px solid #ccc;}
+							@include gridle(12);
+							@include gridle_parent();
+							margin:{bottom:10px;}
+							font:{size:12px;}
+							padding:{bottom:10px;}
+							a{
+								color:#ccc;
+								h2{
+									font:{size:20px;weight:400;}
+									margin:{bottom:3px;top:0;}
+								}
+								p{
+									font:{family:Arial,Sans-Serif;}
+									@extend .no-margins;
+									margin:{top:3px;}
+								}
+								.date{
+									font:{size:13px;family:Arial,Sans-Serif;}
+									color:$pri_color;
+								}
+							}
+						}
+					}
+				}
+			}
+		}	
+		.mobile-search{
+			@include gridle(12);
+			@include gridle_hide(desktopess notebook-min);
+			@include gridle_show(phoness phoness-min);
+			height: 0;
+			overflow: hidden;
+			position: relative;
+			.search{
+				display: none;
+				input{
+					@include gridle(10);
+					@include gridle_parent();
+					border:none;
+					border:{top:1px solid $pri_color;bottom:1px solid $pri_color;left:1px solid $pri_color;}
+					background: #000;
+					height: 28px;
+					padding:3px;
+					color:#fff;
+					@extend .text-right;
+					text:{transform:uppercase;}
+				}
+				button{
+					@include gridle(2);
+					@include gridle_parent();
+					border:none;
+					border:{top:1px solid $pri_color;bottom:1px solid $pri_color;right:1px solid $pri_color;}
+					background: #000;
+					height: 28px;
+					padding:3px;
+					img{
+						position: relative;
+						top: -2px;
+						left: 3px;
+					}
+				}
+			}
+		}
+	}
+}
