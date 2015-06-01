@@ -73,6 +73,39 @@
 					font:{size: 24px;weight: 300;}
 					letter:{spacing: 1px;}
 				}
+				.wa-btn-block{
+					@include gridle(12);
+					@include gridle_parent();
+					min-height: 40px;
+					iframe{
+						display: inline;
+  						vertical-align: middle;
+  						margin:{right:5px;}
+					}
+					.fb-like{
+						display: inline;
+					}
+				}
+				.shareaholic-canvas{
+					@include gridle(12);
+					@include gridle_parent();
+					.shareaholic-share-buttons-container{
+						@include gridle(12);
+						@include gridle_parent();
+						.shareaholic-share-buttons-wrapper{
+							.shareaholic-share-buttons{
+								padding:0 !important;
+								margin:0 !important;
+								padding:{top:10px !important;}
+								li{
+									&:first-child{
+										padding:{left:0 !important;}
+									}
+								}
+							}
+						}
+					}
+				}
 			}
 		}
 	}
@@ -161,6 +194,39 @@
 					font:{family:Arial,Sans-Serif;size:12px;}
 					margin: {bottom:15px;}
 					line-height: 185%;
+				}
+				.wa-btn-block{
+					@include gridle(12);
+					@include gridle_parent();
+					min-height: 40px;
+					iframe{
+						display: inline;
+  						vertical-align: middle;
+  						margin:{right:5px;}
+					}
+					.fb-like{
+						display: inline;
+					}
+				}
+				.shareaholic-canvas{
+					@include gridle(12);
+					@include gridle_parent();
+					.shareaholic-share-buttons-container{
+						@include gridle(12);
+						@include gridle_parent();
+						.shareaholic-share-buttons-wrapper{
+							.shareaholic-share-buttons{
+								padding:0 !important;
+								margin:0 !important;
+								padding:{top:10px !important;}
+								li{
+									&:first-child{
+										padding:{left:0 !important;}
+									}
+								}
+							}
+						}
+					}
 				}
 			}
 		}

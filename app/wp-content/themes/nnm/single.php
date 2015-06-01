@@ -45,6 +45,12 @@
 
 					<?php the_content(); ?>
 					
+
+					<div class="wa-btn-block">
+						<a href="whatsapp://send" data-text="<?php the_title() ?>" data-href="<?php the_permalink(); ?>" class="wa_btn wa_btn_s" style="display:none">Compartir</a>
+						<div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+					</div>
+
 					<h3 class="leave-comment">Deja tu Comentario:</h3>
 					
 				</div>
@@ -88,6 +94,11 @@
 					<div class="texto">
 
 						<?php the_content(); ?>
+
+						<div class="wa-btn-block">
+							<a href="whatsapp://send" data-text="<?php the_title() ?>" data-href="<?php the_permalink(); ?>" class="wa_btn wa_btn_s" style="display:none">Compartir</a>
+							<div class="fb-like" data-href="<?php the_permalink(); ?>" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+						</div>
 
 						<h3 class="leave-comment">Deja tu Comentario:</h3>
 

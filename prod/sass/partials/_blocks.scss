@@ -321,13 +321,12 @@
 		@include gridle_push(0, phoness phoness-min);
 		@include gridle_parent();
 		.review-discos{
-			@include gridle(6, desktopess notebook-min);
-			@include gridle(12, phoness phoness-min);
+			@include gridle(12);
 			@include gridle_parent(phoness phoness-min);
 			margin:{top:20px;}
 			position: relative;
 			overflow: hidden;
-			padding:{left:0;top:10px;}
+			padding:{left:0;top:10px;right:0;}
 			@include gridle_state(phoness phoness-min) {
 				width:100%;
 				padding:{left:0;}
@@ -361,17 +360,18 @@
 									@include gridle_float(left);
 									position: relative;
 									overflow: hidden;
-									width: 130px;
-									height: 130px;
+									width: 150px;
+									height: 150px;
 									@include border-top-radius(50%);
 									@include border-right-radius(50%);
 									@include border-bottom-radius(50%);
 									@include border-left-radius(50%);
-									margin:{left:8px;}
+									margin:{left:20%;}
 									@include gridle_state(phoness phoness-min){
 										width:80px;
 										height:80px;
 										margin:{top:25px;}
+										margin:{left:9%;}
 									}
 								}
 								.texto{
@@ -379,7 +379,10 @@
 									width: 130px;
 									color: #ccc;
 									font:{size: 11px;family:Helmet, Freesans, sans-serif;}
-									padding: 30px 0 30px 20px;
+									padding: 30px 0 30px 90px;
+									@include gridle_state(phoness phoness-min){
+										padding:{left:10px;}
+									}
 									.banda{
 										font:{size: 14px;weight: bold;}
 										@include gridle_clear(both);
@@ -455,7 +458,7 @@
 				}
 			}
 		}
-		.nnm-tv{
+		/*.nnm-tv{
 			@include gridle(6);
 			@include gridle(12, phoness phoness-min);
 			@include gridle_parent(phoness phoness-min);
@@ -510,7 +513,7 @@
 					}
 				}
 			}
-		}
+		}*/
 	}
 }
 .page-view{

@@ -80,9 +80,6 @@
 				<article class="review-discos">
 					<?php get_template_part('loop-reviewdiscos'); ?>
 				</article>
-				<article class="nnm-tv">
-					<?php get_template_part('loop-nnmtv'); ?>
-				</article>
 
 			</section>
 

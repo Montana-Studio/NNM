@@ -40,7 +40,14 @@
 		<!-- /wrapper -->
 		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.flexslider.min.js"></script>
 		<?php wp_footer(); ?>
-		
-
+		<script type="text/javascript">if(typeof wabtn4fg==="undefined"){wabtn4fg=1;h=document.head||document.getElementsByTagName("head")[0],s=document.createElement("script");s.type="text/javascript";s.src="<?php echo get_template_directory_uri(); ?>/js/whatsapp-button.js";h.appendChild(s);}</script>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.0";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
 	</body>
 </html>
