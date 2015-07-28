@@ -13,7 +13,8 @@
 			<?php if ($i==1): ?>
 				<li class="first">
 					<a href="<?php the_permalink() ?>">
-						<?php the_post_thumbnail( '208x100' ) ?>
+						<?php //the_post_thumbnail( '208x100' ) ?>
+						<?php the_post_thumbnail() ?>
 			<?php elseif($i==5): ?>
 				<li class="last">
 					<a href="<?php the_permalink() ?>">

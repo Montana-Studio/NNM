@@ -1,5 +1,5 @@
 			<!-- footer -->
-			<footer class="footer" role="contentinfo">
+			<footer class="footer" role="contentinfo" style="padding-bottom:55px;">
 				
 				<div class="footer-content">
 					<div class="logo">

@@ -14,24 +14,25 @@
 
 		<?php if ($i==1|$i==3|$i==6): ?>
 
-		<li class="columna">
+		<div class="columna">
 
 			<?php endif ?>
-				<div class="post-noticias">
+				<li class="post-noticias">
 					<a href="<?php the_permalink(); ?>">
 						<?php if (in_array($i, array(1,3,6))): ?>
-							<?php the_post_thumbnail('208x100') ?>
+							<?php //the_post_thumbnail('208x100') ?>
+							<?php the_post_thumbnail() ?>
 						<?php endif ?>
 
 						<h2><?php the_title() ?></h2> 
 
 						<span class="date"><?php the_time('j F') ?></span> 
 					</a>
-				</div>
+				</li>
 
 			<?php if ($i==2 || $i==5): ?>
 
-		</li>
+		</div>
 
 		<?php elseif($i==7): ?>
 		<?php endif ?>

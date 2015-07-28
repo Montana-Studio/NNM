@@ -7,7 +7,7 @@
 
 			  <ul class="slides">
 
-				<?php $query = new WP_Query('posts_per_page=3&category_name=noticias&ordeby=DESC'); ?>
+				<?php $query = new WP_Query('posts_per_page=7&category_name=destacado-home&ordeby=DESC'); ?>
 
 				<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
@@ -38,7 +38,7 @@
 			  </ul>
 			</div>
 		</section>
-
+		
 		<section class="noticias">
 
 			<?php get_template_part('loop-noticias'); ?>
@@ -49,11 +49,30 @@
 
 	<?php get_sidebar(); ?>
 
+
+	<div style="max-width:970px;margin:0 auto;display:block;clear:both;padding-top:10px;">
+		
+		<!--NNM TAG ACCOUNT-->
+		<script type='text/javascript' src='http://www.googletagservices.com/tag/js/gpt.js'>
+		  googletag.pubads().definePassback('/109046684/970x90_content', [970, 90]).display();
+		</script>
+
+	</div>
+
 	<main class="feeds">
 			
 			<section class="top10">
 				
 				<?php get_template_part('loop-top10'); ?>
+				
+				<div style="width:200px;clear:both;margin:0 auto;display:block;padding-top: 10px;">
+					
+					<!--NNM TAG ACCOUNT-->
+					<script type='text/javascript' src='http://www.googletagservices.com/tag/js/gpt.js'>
+					  googletag.pubads().definePassback('/109046684/200x200_content', [200, 200]).display();
+					</script>
+
+				</div>
 
 			</section>
 
@@ -76,6 +95,15 @@
 			</section>
 
 			<section class="reviews-tv">
+				
+				<div style="max-width:728px;margin:0 auto;clear:both;display:block;padding-top: 10px;">
+					
+					<!--NNM TAG ACCOUNT-->
+					<script type='text/javascript' src='http://www.googletagservices.com/tag/js/gpt.js'>
+					  googletag.pubads().definePassback('/109046684/728x90_content', [728, 90]).display();
+					</script>
+
+				</div>
 
 				<article class="review-discos">
 					<?php get_template_part('loop-reviewdiscos'); ?>

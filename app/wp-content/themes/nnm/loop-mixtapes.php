@@ -13,7 +13,8 @@
 		<?php if ($i==1): ?>
 			<li class="featured">
 				<a href="<?php the_permalink(); ?>">
-					<?php the_post_thumbnail( '208x100' ) ?>
+					<?php //the_post_thumbnail( '208x100' ) ?>
+					<?php the_post_thumbnail() ?>
 					<h2><?php the_title() ?> <!-- span class="more">[...]</span --></h2>
 				</a>
 			</li>

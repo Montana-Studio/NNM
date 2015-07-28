@@ -10,7 +10,8 @@
 
 		if($myvar->have_posts()) : while($myvar->have_posts()): $myvar->the_post(); ?>
 			<li class="post-recomendados"><a href="<?php the_permalink(); ?>">
-				<?php the_post_thumbnail('208x100') ?>
+				<?php //the_post_thumbnail('208x100') ?>
+				<?php the_post_thumbnail() ?>
 				<h2><?php the_title(); ?></h2>
 				<!-- span class="autor">por <?php echo get_the_author() ?></span -->
 				<span class="date"><?php the_time('j F') ?></span>
